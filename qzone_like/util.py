@@ -4,7 +4,6 @@ import time
 import random
 import cookielib
 import requests
-from PIL import Image
 import json
 import ConfigParser
 mgList_url = 'https://h5.qzone.qq.com/proxy/domain/taotao.qq.com/cgi-bin/' \
