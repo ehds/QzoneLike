@@ -8,21 +8,36 @@
 
 # 二 使用说明
 
-## 1.下载
+## 1.下载与安装
+### 下载源码
 
     git clone https://github.com/Ds-Hale/QzoneLike.git
-    需要用户下载requests库
+   
+### 安装所需的库
+1. requests库
     
 ```
 pip install requests
 ```
+2. selenium库
+```
+pip install -U selenium
+```
+3. phantomjs 
 
+    到[phantomjs](http://phantomjs.org/download.html)下载,
 
+    windows平台:把下载的文件拷贝到本地python环境中
+
+    linux/mac平台:
+    ```
+    ln -s /where/is/phantomjs /usr/local/bin/phantomjs；
+    ```
 ## 2.填写qzone_like目录下的config.conf 配置文件：
 
 qq可以为用户自己的qq号，邮箱号
 pwd 为用户登录密码
-因为腾讯登录时长限制，所以将密码存储本地，以便cookies失效，自动登录
+因为腾讯登录时长限制，所以将密码存储本地，以便cookies失效，自动登录(本应用不会以任何形式窃取用户隐私)
     
 
 ```
@@ -75,5 +90,7 @@ Linux
 nohup python qzone_like.py &
 ```
 
-
+注:
+1. 本应用不会以任何形式保存窃取用户个人隐私
+2. 由于腾讯方面可能会时常更换登录机制,导致功能失效,我会及时更改程序,如果有必要请及时更新
     
