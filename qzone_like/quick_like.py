@@ -83,8 +83,7 @@ def ChangeCookie():
             time.sleep(1)
         except Exception, e:
             myLog.Error("Cannot Click guide button")
-            time.sleep(10)
-            continue
+            time.sleep(3)
         account_input = driver.find_element_by_id('u')  # 账号输入框
         password_input = driver.find_element_by_id('p')  # 密码输入框
         go = driver.find_element_by_id('go')  # 登录按钮
@@ -120,13 +119,16 @@ def cookiedict2str(cookie):
 def getCookiesAndGtk(cookie):
     try:
         cookies = cookiedict2str(cookie)
-        gtk = getGtk(cookie["p_skey"])
+        if cookie.has_key("p_skey"):
+            gtk = getGtk(cookie["p_skey"])
+        else:
+            gtk = getGtk(cookie["skey"])
     except:
         cookies=gtk=""
     return cookies,gtk
 def quick_like(cookie={}):
     cookie = getCookieFromFile()
-    cookies,gtk= getCookiesAndGtk(cookie)
+    cookies, gtk= getCookiesAndGtk(cookie)
     try_count=0
     feed = {}
     while True:
@@ -140,7 +142,7 @@ def quick_like(cookie={}):
             #设定尝试次数为3,防止网络波动造成错误判断cookie失效
             if (try_count>3):
                 cookie = ChangeCookie()
-                cookies,gtk=getCookiesAndGtk(cookie)
+                cookies, gtk=getCookiesAndGtk(cookie)
                 try_count=0
                 pass
             time.sleep(2)
@@ -149,7 +151,8 @@ def quick_like(cookie={}):
         if (CurInfo.large_current(current)):
             uin = feed["userinfo"]["user"]["uid"].encode("utf-8")
             nickname = feed["userinfo"]["user"]["nickname"].encode("utf-8")
-            if(not CurInfo.is_black(nickname,uin)):
+            if(not CurInfo.is_black(nickname, uin)):
+                print "true"
                 post["opuin"] = uin
                 post["curkey"] = feed["comm"]["curlikekey"]
                 post["unikey"] = feed["comm"]["curlikekey"]
@@ -157,9 +160,10 @@ def quick_like(cookie={}):
                 for i in range(3):
                     try:
                         res = requests.post(like_url, data=post, cookies=cookies)
+                        print res.content
                         if "succ" in res.content:
                             HTML = parseToHtml(feed)
-                            send_mail_thread = threading.Thread(target=UpdateNews,args=(nickname,HTML))
+                            send_mail_thread = threading.Thread(target=UpdateNews, args=(nickname,HTML))
                             send_mail_thread.setDaemon(True)
                             send_mail_thread.setName("send mail thread")
                             send_mail_thread.start()
@@ -171,11 +175,12 @@ def quick_like(cookie={}):
 if __name__ == "__main__":
     myLog = MyLog()
     CurInfo = Current()
-    quick_thread = threading.Thread(target=quick_like, args=({}))
-    quick_thread.setDaemon(True)
-    quick_thread.start()
-    quick_thread.join()
-    UpdateNews("Qzone Like error", "system error")
+    # quick_thread = threading.Thread(target=quick_like, args=({}))
+    # quick_thread.setDaemon(True)
+    # quick_thread.start()
+    # quick_thread.join()
+    # UpdateNews("Qzone Like error", "system error")
+    ChangeCookie()
     # cookies,gtk =getCookiesAndGtk(getCookieFromFile())
     # print cookies
     # active_url = "https://h5.qzone.qq.com/webapp/json/mqzone_feeds/getActiveFeeds?g_tk=" + str(gtk)

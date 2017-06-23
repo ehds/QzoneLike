@@ -1,0 +1,50 @@
+[INFO  - 2017-06-23T06:11:06.476Z] GhostDriver - Main - running on port 35229
+[INFO  - 2017-06-23T06:11:07.289Z] Session [bebfb010-57da-11e7-87b5-39ec7d30eab7] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":false,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; Nexus S Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","webSecurityEnabled":true}
+[INFO  - 2017-06-23T06:11:07.289Z] Session [bebfb010-57da-11e7-87b5-39ec7d30eab7] - page.customHeaders:  - {}
+[INFO  - 2017-06-23T06:11:07.289Z] Session [bebfb010-57da-11e7-87b5-39ec7d30eab7] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.loadImages":false,"phantomjs.page.settings.userAgent":"Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; Nexus S Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"}
+[INFO  - 2017-06-23T06:11:07.289Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: bebfb010-57da-11e7-87b5-39ec7d30eab7
+[ERROR - 2017-06-23T06:11:08.383Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1498198268348
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-23T06:11:13.037Z] Session [bebfb010-57da-11e7-87b5-39ec7d30eab7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'videoTest.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-23T06:11:13.038Z] Session [bebfb010-57da-11e7-87b5-39ec7d30eab7] - page.onError - stack:
+  (anonymous function) (https://qzonestyle.gtimg.cn/c/=/qzone/phone/m/v4/lib/router/index.js,/qzone/phone/m/v4/lib/zepto.js,/qzone/phone/m/v4/lib/qz.js,/qzone/phone/m/v4/module/framework3/index.js:1600)
+  exec (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:11)
+  b (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:10)
+  (anonymous function) (https://qzonestyle.gtimg.cn/c/=/qzone/phone/m/v4/lib/router/index.js,/qzone/phone/m/v4/lib/zepto.js,/qzone/phone/m/v4/lib/qz.js,/qzone/phone/m/v4/module/framework3/index.js:2278)
+  exec (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:11)
+  b (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:10)
+  init (https://qzonestyle.gtimg.cn/c/=/qzone/phone/m/v4/lib/router/index.js,/qzone/phone/m/v4/lib/zepto.js,/qzone/phone/m/v4/lib/qz.js,/qzone/phone/m/v4/module/framework3/index.js:2066)
+  (anonymous function) (https://qzonestyle.gtimg.cn/c/=/qzone/phone/m/v4/lib/router/index.js,/qzone/phone/m/v4/lib/zepto.js,/qzone/phone/m/v4/lib/qz.js,/qzone/phone/m/v4/module/framework3/index.js:2054)
+  (anonymous function) (https://qzonestyle.gtimg.cn/c/=/qzone/phone/m/v4/lib/router/index.js,/qzone/phone/m/v4/lib/zepto.js,/qzone/phone/m/v4/lib/qz.js,/qzone/phone/m/v4/module/framework3/index.js:1438)
+  exec (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:11)
+  callback (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:12)
+  onload (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:8)
+  onload (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:8)
+  onload (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:8)
+  onload (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:8)
+  load (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:7)
+  a (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:9)
+  onreadystatechange (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:9)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-23T06:11:13.138Z] Session [bebfb010-57da-11e7-87b5-39ec7d30eab7] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new FrameWork.Hook(this.evtmap)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-23T06:11:13.139Z] Session [bebfb010-57da-11e7-87b5-39ec7d30eab7] - page.onError - stack:
+  bind (https://qzonestyle.gtimg.cn/c/=/qzone/phone/m/v4/module/info2/index.js,/qzone/phone/m/v4/module/templates/index.js,/qzone/phone/m/v4/module/templates/dateTimeFormat.js,/qzone/phone/m/v4/module/templates/getFixPic.js,/qzone/phone/m/v4/widget/feed2/index.js,/qzone/phone/m/v4/module/templates/element2/tmpl.js,/qzone/phone/m/v4/widget/lazy.js,/qzone/phone/m/v4/widget/commonhook.js,/qzone/phone/m/v4/widget/player/index.js,/qzone/phone/m/v4/module/base/base.mod.js:14)
+  init (https://qzonestyle.gtimg.cn/c/=/qzone/phone/m/v4/module/info2/index.js,/qzone/phone/m/v4/module/templates/index.js,/qzone/phone/m/v4/module/templates/dateTimeFormat.js,/qzone/phone/m/v4/module/templates/getFixPic.js,/qzone/phone/m/v4/widget/feed2/index.js,/qzone/phone/m/v4/module/templates/element2/tmpl.js,/qzone/phone/m/v4/widget/lazy.js,/qzone/phone/m/v4/widget/commonhook.js,/qzone/phone/m/v4/widget/player/index.js,/qzone/phone/m/v4/module/base/base.mod.js:3243)
+  init (https://qzonestyle.gtimg.cn/c/=/qzone/phone/m/v4/module/info2/index.js,/qzone/phone/m/v4/module/templates/index.js,/qzone/phone/m/v4/module/templates/dateTimeFormat.js,/qzone/phone/m/v4/module/templates/getFixPic.js,/qzone/phone/m/v4/widget/feed2/index.js,/qzone/phone/m/v4/module/templates/element2/tmpl.js,/qzone/phone/m/v4/widget/lazy.js,/qzone/phone/m/v4/widget/commonhook.js,/qzone/phone/m/v4/widget/player/index.js,/qzone/phone/m/v4/module/base/base.mod.js:14)
+  (anonymous function) (https://qzonestyle.gtimg.cn/c/=/qzone/phone/m/v4/lib/router/index.js,/qzone/phone/m/v4/lib/zepto.js,/qzone/phone/m/v4/lib/qz.js,/qzone/phone/m/v4/module/framework3/index.js:31)
+  callback (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:12)
+  onload (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:8)
+  onload (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:8)
+  onload (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:8)
+  load (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:7)
+  load (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:8)
+  a (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:9)
+  onreadystatechange (https://qzonestyle.gtimg.cn/qzone/phone/m/v4/lib/dist/seajs3-0.1.5.js?max_age=31104000:9)
+
+  phantomjs://platform/console++.js:263 in error

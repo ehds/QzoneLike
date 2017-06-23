@@ -89,4 +89,4 @@ class SendMail():
         self.mail_handle.close()
 if __name__  == "__main__":
     Mail = SendMail()
-    Mail.send_HTML("test",["ds_hale@163.com"],parseToHtml())
+    Mail.send_HTML("test",["ds_hale@163.com"],"test")
